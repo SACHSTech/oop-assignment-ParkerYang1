@@ -20,4 +20,13 @@ public class Chef extends Human{
         super(fName, lName);
         this.salary = jobSalary;
     }
+
+    /**
+     * Getter method for salary 
+     * @return salary 
+     * @author: Parker Yang
+     */
+    public int getSalary(){
+        return salary;
+    }
 }
