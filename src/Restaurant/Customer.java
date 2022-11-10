@@ -40,11 +40,21 @@ public class Customer extends Human{
 
     /**
      * Getter method for email of customer
-     * @return email of the customer
+     * @return Address of the customer
      * @author: Parker Yang
      * 
      */
     public String getAddress(){
         return address; 
+    }
+
+    /**
+     * Getter method for email of customer
+     * @return Email of the customer
+     * @author: Parker Yang
+     * 
+     */
+    public String getEmail(){
+        return email;
     }
 }
