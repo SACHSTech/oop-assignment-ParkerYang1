@@ -13,8 +13,8 @@ public class Human {
 
     /**
      * Constructor for human
-     * @param fName first name
-     * @param lName last name
+     * @param fName First name
+     * @param lName Last name
      * @author: Parker Yang
      */
     public Human(String fName, String lName){
@@ -24,7 +24,7 @@ public class Human {
 
     /**
      * Getter method to get first name
-     * @return first name
+     * @return First name
      * @author: Parker Yang
      */
     public String getFirstName(){
@@ -33,7 +33,7 @@ public class Human {
 
     /**
      * Getter method to get last name
-     * @return last name
+     * @return Last name
      * @author: Parker Yang
      */
     public String getLastName(){
