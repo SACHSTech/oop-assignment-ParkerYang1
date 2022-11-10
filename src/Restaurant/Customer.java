@@ -7,9 +7,10 @@ package Restaurant;
  */
 
 public class Customer extends Human{
-    //Instance variables 
+    //Instance and Class variables 
     private String address;
-    private int customers; 
+    private String email;
+    private static int numCustomers = 0; 
 
     /**
      * Constructor for customer
@@ -19,9 +20,21 @@ public class Customer extends Human{
      * @param totalCustomers Total # of customers in the restaurant
      * 
      */
-    public Customer(String fName, String lName, String customerAddress, int totalCustomers){
+    public Customer(String fName, String lName, String customerAddress, String customerEmail){
         super(fName, lName);
         this.address = customerAddress; 
-        this.customers = totalCustomers;
+        this.email = customerEmail;
+        
+        numCustomers++; 
+    }
+
+    /**
+     * Getter method to get number for customers
+     * @return total # of customers in the restaurant
+     * @author: Parker Yang
+     * 
+     */
+    public int getNumCustomers(){ 
+        return numCustomers; 
     }
 }
