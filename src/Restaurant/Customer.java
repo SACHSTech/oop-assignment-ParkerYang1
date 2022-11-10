@@ -57,4 +57,14 @@ public class Customer extends Human{
     public String getEmail(){
         return email;
     }
+
+    /** 
+     * Converts the information of customer to a string 
+     * @return: Customer perosnal information
+     * @author: Parker Yang
+     * 
+     */
+    public String toString(){
+        return "Welcome " + this.getFirstName() + " " + this.getLastName() + "." + "(Address: " + this.getAddress() + ")" + " (Email: " + this.getEmail() + ")";
+    }
 }
