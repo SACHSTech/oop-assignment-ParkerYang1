@@ -31,4 +31,12 @@ public class Human {
         return firstName;
     }
 
+    /**
+     * Getter method to get last name
+     * @return last name
+     * @author: Parker Yang
+     */
+    public String getLastName(){
+        return lastName;
+    }
 }
