@@ -17,7 +17,7 @@ public class Customer extends Human{
      * @param fName First name
      * @param lName Last name
      * @param customerAddress Address 
-     * @param totalCustomers Total # of customers in the restaurant
+     * @param customerEmail Email
      * 
      */
     public Customer(String fName, String lName, String customerAddress, String customerEmail){
@@ -30,11 +30,21 @@ public class Customer extends Human{
 
     /**
      * Getter method to get number for customers
-     * @return total # of customers in the restaurant
+     * @return Total # of customers in the restaurant
      * @author: Parker Yang
      * 
      */
     public int getNumCustomers(){ 
         return numCustomers; 
+    }
+
+    /**
+     * Getter method for email of customer
+     * @return email of the customer
+     * @author: Parker Yang
+     * 
+     */
+    public String getAddress(){
+        return address; 
     }
 }
