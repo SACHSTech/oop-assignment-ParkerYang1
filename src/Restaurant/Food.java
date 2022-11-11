@@ -22,4 +22,13 @@ public class Food {
         orderNum = orderID;
         quantity = numServings; 
     }
+
+    /**
+     * Getter method for order number
+     * @return The number code for the desired food
+     * @author: Parker Yang
+     */
+    public int getOrderID(){
+        return orderNum;
+    }
 }
