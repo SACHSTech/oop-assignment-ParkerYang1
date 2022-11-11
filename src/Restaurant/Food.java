@@ -27,8 +27,19 @@ public class Food {
      * Getter method for order number
      * @return The number code for the desired food
      * @author: Parker Yang
+     * 
      */
-    public int getOrderID(){
+    public int getOrderNum(){
         return orderNum;
     }
+
+    /**
+     * Getter method for quantity 
+     * @return Quantity of servings for each food
+     * @author: Parker Yang
+     * 
+     */
+    public int getQuantity(){
+        return quantity; 
+    } 
 }
