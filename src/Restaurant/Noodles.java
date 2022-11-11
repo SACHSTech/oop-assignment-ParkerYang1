@@ -21,4 +21,14 @@ public class Noodles extends Food{
         super(orderID, numServings);
         this.sauce = noodleSauce;
     }
+
+    /**
+     * Getter method for sauce 
+     * @return The sauce for the noodles 
+     * @author: Parker Yang
+     * 
+     */
+    public String getSauce(){
+        return sauce; 
+    }
 }
