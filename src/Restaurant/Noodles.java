@@ -31,4 +31,15 @@ public class Noodles extends Food{
     public String getSauce(){
         return sauce; 
     }
+
+    /**
+     * Converts the order info to a String
+     * @return Information of order
+     * @author: Parker Yang
+     * 
+     */
+    public String toString(){
+        return "We will get " + this.getQuantity() + " of #" + this.getOrderNum() + " with " + this.getSauce() + ".";
+    }
 }
+
