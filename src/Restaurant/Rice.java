@@ -32,4 +32,14 @@ public class Rice extends Food{
     public String getType(){
         return type;
     }
+
+    /**
+     * Converts the order info to a String
+     * @return Information of order
+     * @author: Parker Yang
+     * 
+     */
+    public String toString(){
+        return "We will get " + this.getQuantity() + " of #" + this.getOrderNum() + " with " + this.getType() + ".";
+    }
 }
