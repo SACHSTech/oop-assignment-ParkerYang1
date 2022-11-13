@@ -22,4 +22,14 @@ public class Rice extends Food{
         super(orderID, numServings);
         this.type = riceType;
     }
+
+    /**
+     * Getter method for type of rice
+     * @return Type of rice
+     * @author: Parker Yang
+     * 
+     */
+    public String getType(){
+        return type;
+    }
 }
