@@ -40,7 +40,7 @@ public class Chef extends Human{
      * 
      */
     public String toString(){
-        return "Hello, my name is" + this.getFirstName() + " " + this.getLastName() + " and I will be your chef for today. " + "(Salary: " + salary + ")"; 
+        return "Hello, my name is " + this.getFirstName() + " " + this.getLastName() + " and I will be your chef for today. " + "(Salary: " + salary + ")"; 
     }
 
 }
