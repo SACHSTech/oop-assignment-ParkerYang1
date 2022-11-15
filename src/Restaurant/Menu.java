@@ -1,5 +1,11 @@
 package Restaurant;
 
+/**
+ * OOP Assignment Menu class
+ * @author: Parker Yang 
+ * 
+ */
+
 public class Menu {
     // Instance variables
     private int menus;

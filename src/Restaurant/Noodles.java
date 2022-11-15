@@ -5,6 +5,7 @@ package Restaurant;
  * @author: Parker Yang
  * 
  */
+
 public class Noodles extends Food{
     // Instance variables
     private String sauce;
