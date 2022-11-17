@@ -37,18 +37,22 @@ public class HibachiRestaurant{
         String email;
         int numCustomers;
         int totalCustomers = 0; 
+        int optionA;
+        int optionB;
+        int quantity;
+        int orderNum;
 
-        System.out.print("Press 0 to enter the restaurant. ");
+        System.out.print("\nPress 0 to enter the restaurant. ");
         enter = Integer.parseInt(key.readLine());
 
         if(enter == 0){
-            System.out.println("Welcome to Parker's Hibachi Restaurant!");
+            System.out.println("\nWelcome to Parker's Hibachi Restaurant!");
             System.out.print("Enter number of customers: ");
             numCustomers = Integer.parseInt(key.readLine());
-            totalCustomers = totalCustomers + numCustomers;
+            // totalCustomers = totalCustomers + numCustomers;
             
-                if(numCustomers < 10){
-                    System.out.print("In order to reserve a table, please enter the information of a member in the party. ");
+                if(numCustomers < 10 && numCustomers > 0){
+                    System.out.println("\nIn order to reserve a table, please enter the information of a member in the party. ");
                     System.out.print("Enter your first name: ");
                     fName = key.readLine();
                     System.out.print("Enter your last name: ");
@@ -59,20 +63,39 @@ public class HibachiRestaurant{
                     email = key.readLine();
 
                     Customer customer = new Customer(fName, lName, address, email);
-                    System.out.println(customer);
+                    System.out.println("\n" + customer);
+
+                    System.out.println("\n" + head);
+
+                    System.out.println("\n----- Menu -----");
+                    System.out.print("Press 1 for noodles options and 2 for rice options. ");
+                    optionA = Integer.parseInt(key.readLine());
+
+                    if (optionA == 1){
+                        System.out.println("\n----- Noodles Options -----");
+                        System.out.println("1. Chicken Stir Fry Noodles");
+                        System.out.println("2. Beef Stir Fry Noodles");
+                        System.out.println("3. Pork Stir Fry Noodles");
+                        System.out.println("4. Vegan Stir Fry Noodles");
+                        System.out.println("-----------------------------");
+                        System.out.print("\nChoose an option. ");
+                        optionB = Integer.parseInt(key.readLine());
+
+                    } else if (optionA == 2){
+                        System.out.println("\n----- Rice Option -----");
+                        System.out.println("1. Chicken Fried Rice");
+                        System.out.println("2. Beef Fried Rice");
+                        System.out.println("3. Pork Fried Rice");
+                        System.out.println("4. Vegan Fried Rice");
+                    } else {
+                        System.out.println("\nPlease enter a valid option");
+                    }
+                    
                 } else {
-                    System.out.println("Sorry we do not have a table big enough to fit that many people");
+                    System.out.println("\nSorry we do not have a table right now.");
                 }
         } else {
             System.out.println("See you later.");
         }
-    }
-    /**
-     * Simulates dinner service
-     * @author: Parker Yang
-     * 
-     */
-    public static void service() throws IOException{
-
     }
 }
