@@ -18,6 +18,11 @@ public class HibachiRestaurant{
         welcome();
     }
 
+    /**
+     * Welcomes customer and gets info
+     * @author: Parker Yang
+     * 
+     */
     public static void welcome() throws IOException{
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
@@ -61,5 +66,13 @@ public class HibachiRestaurant{
         } else {
             System.out.println("See you later.");
         }
+    }
+    /**
+     * Simulates dinner service
+     * @author: Parker Yang
+     * 
+     */
+    public static void service() throws IOException{
+
     }
 }
