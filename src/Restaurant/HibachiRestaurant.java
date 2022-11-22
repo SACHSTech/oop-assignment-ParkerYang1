@@ -10,20 +10,11 @@ import java.util.*;
 
 public class HibachiRestaurant{
     /**
-     * Call all the methods
+     * Main method to run all the code/interface
      * @author: Parker Yang
      * 
      */
     public static void main(String[] args) throws IOException{
-        welcome();
-    }
-
-    /**
-     * Welcomes customer and gets info
-     * @author: Parker Yang
-     * 
-     */
-    public static void welcome() throws IOException{
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
         // Creating new objects
@@ -44,6 +35,12 @@ public class HibachiRestaurant{
 
         System.out.print("\nPress 0 to enter the restaurant. ");
         enter = Integer.parseInt(key.readLine());
+        
+        while(enter != 0) {
+            System.out.println("\nSee you later.");
+            System.out.print("Press 0 to enter the restaurant. ");
+            enter = Integer.parseInt(key.readLine());
+        }
 
         if(enter == 0){
             System.out.println("\nWelcome to Parker's Hibachi Restaurant!");
@@ -81,6 +78,8 @@ public class HibachiRestaurant{
                         System.out.print("\nChoose an option. ");
                         optionB = Integer.parseInt(key.readLine());
 
+                        
+
                     } else if (optionA == 2){
                         System.out.println("\n----- Rice Option -----");
                         System.out.println("1. Chicken Fried Rice");
@@ -91,11 +90,12 @@ public class HibachiRestaurant{
                         System.out.println("\nPlease enter a valid option");
                     }
                     
+                } else if (numCustomers < 0) {
+                    System.out.println("\n--- INVALID ---");
                 } else {
                     System.out.println("\nSorry we do not have a table right now.");
                 }
-        } else {
-            System.out.println("See you later.");
         }
-    }
+    } 
 }
+
