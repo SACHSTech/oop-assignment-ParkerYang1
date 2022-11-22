@@ -40,7 +40,7 @@ public class Noodles extends Food{
      * 
      */
     public String toString(){
-        return "We will get " + this.getQuantity() + " of #" + this.getOrderNum() + " with " + this.getSauce() + ".";
+        return "We will get " + this.getQuantity() + " servings of #" + this.getOrderNum() + " with " + this.getSauce() + ".";
     }
 }
 

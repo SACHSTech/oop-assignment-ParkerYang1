@@ -40,6 +40,6 @@ public class Rice extends Food{
      * 
      */
     public String toString(){
-        return "We will get " + this.getQuantity() + " of #" + this.getOrderNum() + " with " + this.getType() + ".";
+        return "We will get " + this.getQuantity() + " servings of #" + this.getOrderNum() + " with " + this.getType() + ".";
     }
 }
