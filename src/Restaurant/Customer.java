@@ -10,7 +10,6 @@ public class Customer extends Human{
     //Instance and Class variables 
     private String address;
     private String email;
-    private static int numCustomers = 0; 
 
     /**
      * Constructor for customer
@@ -24,18 +23,6 @@ public class Customer extends Human{
         super(fName, lName);
         this.address = customerAddress; 
         this.email = customerEmail;
-        
-        numCustomers++; 
-    }
-
-    /**
-     * Getter method to get number for customers
-     * @return Total # of customers in the restaurant
-     * @author: Parker Yang
-     * 
-     */
-    public int getNumCustomers(){ 
-        return numCustomers; 
     }
 
     /**
