@@ -99,6 +99,12 @@ public class HibachiRestaurant{
                             System.out.print("\nChoose an option (1 - 4). Enter 0 to complete order: ");
                             optionB = Integer.parseInt(key.readLine());
 
+                            while (optionB > 4 || optionB <= -1){
+                                System.out.println("\n--- INVALID ---");
+                                System.out.print("Choose an option (1 - 4). Enter 0 to complete order: ");
+                                optionB = Integer.parseInt(key.readLine());
+                            }
+
                             if (optionB == 1){
                                 orderID = 12567;
                                 price = 15.99;
@@ -135,7 +141,7 @@ public class HibachiRestaurant{
                                 }
                                 end = true;
                                 break;
-                            }
+                            } 
 
                             if(end == true){
                                 continue;
@@ -187,6 +193,12 @@ public class HibachiRestaurant{
                             System.out.print("\nChoose an option (1 - 4). Enter 0 to complete order: ");
                             optionB = Integer.parseInt(key.readLine());
 
+                            while (optionB > 4 || optionB <= -1){
+                                System.out.println("\n--- INVALID ---");
+                                System.out.print("Choose an option (1 - 4). Enter 0 to complete order: ");
+                                optionB = Integer.parseInt(key.readLine());
+                            }
+
                             if (optionB == 1){
                                 orderID = 69712;
                                 price = 15.99;
@@ -222,7 +234,7 @@ public class HibachiRestaurant{
                                 }
                                 end = true;
                                 break;
-                            }
+                            } 
 
                             if(end == true){
                                 continue;

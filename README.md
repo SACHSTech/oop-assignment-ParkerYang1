@@ -6,4 +6,5 @@
 *Insert Class Diagram here*  
 
 ## Summary
-The system I decided to model was a restaurant. The user to welcomed into the restaurant where they have the option to personalize their own meal. At the end of the order, the user is required to re-enter the exact cost of the meal before leaving. Within this program, I have a variety of different getter methods that are used to obtain the information used to personalize the users meal. 
+The system I decided to model was a restaurant. The user to welcomed into the restaurant where they are required to enter some personal information to register for a table. Once the user is seated, they have the option to personalize their noodle or rice meal. Once the order to complete, the user is required to re-enter the exact cost of the meal before leaving. To build this program, I created 8 different classes: Chef, Customer, Food, HibachiRestaurant, Human, Menu, Noodles, Rice. In this program, I have aggregation relationships that are between HibachiRestaurant - Noodles, HibachiRestaurant - Rice, HibachiRestaurant - Menu. I also included inheritance relationships that are between Human - Chef, Human - Customer, Food - Noodles, Food - Rice. 
+
