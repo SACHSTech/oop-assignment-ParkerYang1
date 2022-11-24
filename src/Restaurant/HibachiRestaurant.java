@@ -246,22 +246,22 @@ public class HibachiRestaurant{
                             System.out.println("\n--- Rice Options ---");
                             System.out.println("1. White Rice");
                             System.out.println("2. Brown Rice");
-                            System.out.println("3. Cauliflower Sauce");
+                            System.out.println("3. Cauliflower Rice");
                             System.out.print("Enter an Option: ");
                             rice = Integer.parseInt(key.readLine());
 
                             if(rice == 1){
-                                optionC = "white Rice";
+                                optionC = "white rice";
                             } else if (rice == 2){
-                                optionC = "brown Rice";
+                                optionC = "brown rice";
                             } else {
-                                optionC = "cauliflower Sauce";
+                                optionC = "cauliflower rice";
                             } 
 
                             while(rice > 3 || rice < 0){
                                 System.out.println("\n--- INVALID ---");
                                 System.out.println("--- Enter a valid option ---");
-                                sauce = Integer.parseInt(key.readLine());
+                                rice = Integer.parseInt(key.readLine());
                             }
 
                             Rice A = new Rice(orderID, quantity, optionC);

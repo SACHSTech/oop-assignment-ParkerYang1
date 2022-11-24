@@ -28,4 +28,14 @@ public class Menu {
     public int getMenuGiven(){
         return menus;
     }
+
+    /**
+     * Convert information to string
+     * @return # of menus given
+     * @author: Parker Yang
+     * 
+     */
+    public String toString(){
+        return this.getMenuGiven() + "are given.";
+    }
 }
