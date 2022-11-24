@@ -17,9 +17,6 @@ public class HibachiRestaurant{
     public static void main(String[] args) throws IOException{
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
-        // Creating new objects
-        Chef head = new Chef("Timmy", "Lee", 70000);
-
         // Variables
         int enter;
         String fName;
@@ -72,20 +69,23 @@ public class HibachiRestaurant{
                 System.out.print("Enter your email: ");
                 email = key.readLine();
 
+                // Objects are made and printed 
                 Customer customer = new Customer(fName, lName, address, email);
+                Chef head = new Chef("Timmy", "Lee", 70000);
                 System.out.println("\n" + customer);
-
                 System.out.println("\n" + head);
+                Menu menu = new Menu(numCustomers);
 
                 
                 while(chooseOption == true && end == false){
                     end = false;
                     // Menu
+                    System.out.println(menu);
                     System.out.println("\n----- Menu -----");
                     System.out.print("Press 1 for noodles options and 2 for rice options. ");
                     System.out.print("");
                     optionA = Integer.parseInt(key.readLine());
-                        // Code for noodles option
+                    // Code for noodles option
                     if (optionA == 1){
                         takeOrder = true;
 

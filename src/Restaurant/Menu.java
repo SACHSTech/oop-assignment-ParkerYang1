@@ -36,6 +36,6 @@ public class Menu {
      * 
      */
     public String toString(){
-        return this.getMenuGiven() + "are given.";
+        return this.getMenuGiven() + " menus are given.";
     }
 }
