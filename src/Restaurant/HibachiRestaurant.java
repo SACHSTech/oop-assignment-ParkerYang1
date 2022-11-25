@@ -18,16 +18,15 @@ public class HibachiRestaurant{
         BufferedReader key = new BufferedReader(new InputStreamReader(System.in));
 
         // Variables
-        int enter;
         String fName;
         String lName;
         String address;
         String email;
+        String optionC;
+        int enter;
         int numCustomers;
         int optionA = 0;
         int optionB;
-        String optionC;
-        boolean takeOrder = false;
         int orderID = 0;
         int quantity;
         int sauce;
@@ -40,6 +39,7 @@ public class HibachiRestaurant{
         double cost = 0.0;
         boolean chooseOption = true;
         boolean end = false;
+        boolean takeOrder = false;
 
         // Enter restaurant
         System.out.print("\nPress 0 to enter the restaurant. ");
@@ -275,9 +275,6 @@ public class HibachiRestaurant{
                             continue;
                     }
                 }
-                
-            
-                
             } else if (numCustomers <= 0) {
                 System.out.println("\n--- INVALID ---");
                 System.out.print("Enter number of customers: ");
