@@ -3,7 +3,8 @@
 
 [*see instructions for details*](Instructions.md)
 
-*Insert Class Diagram here*  
+![alt text](https://i.ibb.co/HTfw4XM/Screen-Shot-2022-11-24-at-8-06-55-PM.png)
 
 ## Summary
-*Include a brief summary that describes your system that your are modelling*
+The system I decided to model was a restaurant. The user to welcomed into the restaurant where they are required to enter some personal information to register for a table. Once the user is seated, they have the option to personalize their own noodle or rice meal. After the order is complete, the user is required to re-enter the exact cost of the meal before leaving. To build this program, I created 8 different classes: Chef, Customer, Food, HibachiRestaurant, Human, Menu, Noodles, Rice. In this program, I have aggregation relationships that are between HibachiRestaurant - Noodles, HibachiRestaurant - Rice, HibachiRestaurant - Menu. I also included inheritance relationships that are between Human - Chef, Human - Customer, Food - Noodles, Food - Rice. 
+
