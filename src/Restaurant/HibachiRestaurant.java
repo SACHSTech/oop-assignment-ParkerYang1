@@ -137,6 +137,7 @@ public class HibachiRestaurant{
                                 } else if (pay > totalRounded){
                                     change = Math.round((pay - totalRounded) * 100.0) / 100.0;;
                                     System.out.println("Change: $" + change);
+                                    System.out.println("Thank you for coming! See you again.");
                                     
                                 }
                                 end = true;
@@ -147,7 +148,7 @@ public class HibachiRestaurant{
                                 continue;
                             }
 
-                            // Options for meal
+                            // Customize meal
                             System.out.print("Enter quantity: ");
                             quantity = Integer.parseInt(key.readLine());
                             System.out.println("\n--- Sauce Options ---");
@@ -157,6 +158,12 @@ public class HibachiRestaurant{
                             System.out.print("Enter an Option: ");
                             sauce = Integer.parseInt(key.readLine());
 
+                            while(sauce > 3 || sauce < 0){
+                                System.out.println("\n--- INVALID ---");
+                                System.out.println("--- Enter a valid option ---");
+                                sauce = Integer.parseInt(key.readLine());
+                            }
+
                             if(sauce == 1){
                                 optionC = "sweet & sour sauce";
                             } else if (sauce == 2){
@@ -164,12 +171,6 @@ public class HibachiRestaurant{
                             } else {
                                 optionC = "soy sauce";
                             } 
-
-                            while(sauce > 3 || sauce < 0){
-                                System.out.println("\n--- INVALID ---");
-                                System.out.println("--- Enter a valid option ---");
-                                sauce = Integer.parseInt(key.readLine());
-                            }
 
                             // Print out constructor 
                             Noodles A = new Noodles(orderID, quantity, optionC);
@@ -231,6 +232,7 @@ public class HibachiRestaurant{
                                 } else if (pay > totalRounded){
                                     change = Math.round((pay - totalRounded) * 100.0) / 100.0;;
                                     System.out.println("Change: $" + change);
+                                    System.out.println("Thank you for coming! See you again.");
                                 }
                                 end = true;
                                 break;
@@ -240,7 +242,7 @@ public class HibachiRestaurant{
                                 continue;
                             }
 
-                            // Option for meal
+                            // Customize meal
                             System.out.print("Enter quantity: ");
                             quantity = Integer.parseInt(key.readLine());
                             System.out.println("\n--- Rice Options ---");
@@ -250,6 +252,12 @@ public class HibachiRestaurant{
                             System.out.print("Enter an Option: ");
                             rice = Integer.parseInt(key.readLine());
 
+                            while(rice > 3 || rice < 0){
+                                System.out.println("\n--- INVALID ---");
+                                System.out.println("--- Enter a valid option ---");
+                                rice = Integer.parseInt(key.readLine());
+                            }
+
                             if(rice == 1){
                                 optionC = "white rice";
                             } else if (rice == 2){
@@ -257,12 +265,6 @@ public class HibachiRestaurant{
                             } else {
                                 optionC = "cauliflower rice";
                             } 
-
-                            while(rice > 3 || rice < 0){
-                                System.out.println("\n--- INVALID ---");
-                                System.out.println("--- Enter a valid option ---");
-                                rice = Integer.parseInt(key.readLine());
-                            }
 
                             Rice A = new Rice(orderID, quantity, optionC);
                             System.out.println("\n" + A);
